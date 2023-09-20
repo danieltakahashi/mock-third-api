@@ -1,0 +1,17 @@
+{
+    "name": "danieltakahashi/mock-third-api",
+    "description": "Application to mock responses from third API",
+    "autoload": {
+        "psr-4": {
+            "MockThirdApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "John Doe"
+        }
+    ],
+    "require": {
+        "nikic/fast-route": "^1.3"
+    }
+}

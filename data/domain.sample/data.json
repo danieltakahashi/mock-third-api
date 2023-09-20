@@ -1,0 +1,24 @@
+[
+    {
+        "method": "GET",
+        "path": "/test1",
+        "response": {
+            "statusCode": 202,
+            "body": {
+                "result_code": 1234,
+                "result_message": "test1 working"
+            }
+        }
+    },
+    {
+        "method": "GET",
+        "path": "/test2",
+        "response": {
+            "statusCode": 200,
+            "body": {
+                "result_code": 1234,
+                "result_message": "test2 working"
+            }
+        }
+    }
+]
