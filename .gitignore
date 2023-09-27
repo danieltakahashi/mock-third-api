@@ -1,5 +1,4 @@
 .vscode/
 vendor/
-composer.lock
 .idea/
 docker-compose.override.yml
