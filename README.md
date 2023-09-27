@@ -27,7 +27,6 @@ And change the `networks` that is in use in your application.
 Finally, execute 
 ```
 docker-compose up -d --build
-docker exec mock-third-api-php composer install
 ```
 
 ### Creating directories
