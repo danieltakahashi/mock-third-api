@@ -19,6 +19,7 @@ services:
     build:
       context: ./
       dockerfile: ./docker/php/Dockerfile
+    entrypoint: ./docker/php/entrypoint.sh
     container_name: mock-third-api-php
     networks:
       - default
