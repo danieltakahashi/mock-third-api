@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 use MockThirdApi\DTO\RequestData;
+use MockThirdApi\DTO\ResponseData;
+use MockThirdApi\Http\AppRouter;
 use MockThirdApi\MockApi;
 use MockThirdApi\Responses\JsonFile;
 
@@ -22,9 +24,9 @@ require 'vendor/autoload.php';
 
 		$apiPath = rawurldecode($apiPath);
 		$requestData = new RequestData($apiName, $apiPath, $httpMethod);
-		$jsonFile = new JsonFile($apiName);
-		$mockApi = new MockApi(requestData: $requestData, response: $jsonFile);
+        $appRouter = new AppRouter($requestData);
 
+		$mockApi = new MockApi($appRouter);
 		$mockApi->serve();
 	} catch (\Exception $exception) {
 		echo $exception->getMessage() . PHP_EOL;
