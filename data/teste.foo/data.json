@@ -1,0 +1,23 @@
+[
+    {
+        "method": "GET",
+        "path": "/test1",
+        "response": {
+            "type": "json",
+            "statusCode": 202,
+            "body": {
+                "result_code": 1234,
+                "result_message": "test1 working"
+            }
+        }
+    },
+    {
+        "method": "GET",
+        "path": "/test2",
+        "response": {
+            "type": "xml",
+            "statusCode": 202,
+            "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<livro>\n    <titulo>O Senhor dos Anéis</titulo>\n    <autor>J.R.R. Tolkien</autor>\n    <ano_publicacao>1954</ano_publicacao>\n    <editora>Editora Minotauro</editora>\n</livro>\n"
+        }
+    }
+]
